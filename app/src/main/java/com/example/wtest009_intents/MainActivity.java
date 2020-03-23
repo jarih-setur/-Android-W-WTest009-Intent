@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        (Toast.makeText(this,String.format("onActivityResult::\nRequstCode:%d\nResult: %d\nData:%s",requestCode,resultCode,data),Toast.LENGTH_LONG)).show();
+        (Toast.makeText(this,String.format("onActivityResult::\nRequestCode:%d\nResult: %d\nData:%s",requestCode,resultCode,data),Toast.LENGTH_LONG)).show();
+    }
+
+    public void sendMessage(View view) {
+        // Do something in response to button click
     }
 }
